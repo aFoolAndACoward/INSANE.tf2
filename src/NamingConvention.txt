@@ -1,0 +1,17 @@
+Using CamelCase.
+
+Function names start with their FIRST LETTER CAPITAL
+Variable names start with their FIRST LETTER SMALL
+
+Following are some common prefix used in varible names:
+"m_" : for member variables.
+"_"  : private methods
+"sz" : Strings
+"vec": std::vector(s)
+"v"  : for Vec3 ( float x,y,z; )
+"q"  : for QAngles ( float roll, pitch, yaw; )
+"i"  : Intergers
+"fl" : floats
+"n"  : Represents count of something 
+
+NOTE: use SPACES not TABS to align.

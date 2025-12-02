@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui_impl_dx9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui_impl_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Aimbot\Aimbot Melee\AimbotMelee.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Aimbot\Aimbot Projectile\AimbotProjectile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Aimbot\AimbotHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Aimbot\AimbotHitscanV2\AimbotHitscanV2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\BulletTracers\BulletTarcers_t.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Config\ConfigHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\CritHack\CritHack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\DMEHandler\DMEHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ESP\ESPV2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Entity Iterator\EntityIterator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\FeatureHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Glow\Glow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Draw Objects\BaseDrawObj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Draw Objects\Box\Box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Draw Objects\Circle\Circle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Draw Objects\Cube\Cube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Draw Objects\Line\Line.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine\DirectX Handler\DirectXHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine\Draw Objects\DrawObj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine\Graphics Engine\GraphicsEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\AnimationHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\InfoWindowV2\InfoWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\KeybindPanel\KeybindPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\MenuV2\MenuV2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\NotificationSystem\NotificationSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\PlayerList\PlayerListV2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Material Gen\MaterialGen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ModelPreview\ModelPreview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Movement\Movement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\MovementSimulation\MovementSimulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\NoSpread\NoSpreadV2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Projectile Engine\ProjectileEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Tick Shifting\TickShifting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\TickManip\AntiAim\AntiAimV2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\TickManip\TickManipHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\WorldColorModulation\WorldColorModulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CBaseAnimating_SetupBones.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CClientState_Disconnect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CGlowObjectManager_ApplyEntityGlowEffects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CL_Move.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CNetChan_SendDatagram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CTFWeaponBaseMelee_CalcIsAttackCritHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CTFWeaponBase_CalcIsAttackCriticalHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CViewRender_RenderView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CheckForPureServerWhitelist\sv_pure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\ClientModeShared_LevelInit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CreateMove.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\DirectX Hook\DirectX_hook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\DispatchUserMessage\DispatchUserMessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\DrawModelExecutes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\EndScene\EndScene helper functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\EndScene\EndScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\FX_FireBullets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\FrameStageNotify\FrameStageNotify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\GetBulletTracers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\GetFogColor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\GetSkyboxFogColor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\GetUserCmd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\IClientRenderable_ShouldDraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\IStudioRender_DrawModelStaticProp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\PaintTraverse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\R_LoadSky.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\WinProc\WinProc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\renderGlowEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Libraries\Console System V2\ConsoleSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Libraries\Utility\Utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\FontManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\JetBrains Mono NL\JetBrains Mono NL Light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\JetBrains Mono NL\JetBrains Mono NL SemiBold.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\JetBrains Mono Nerd\JetBrainsMonoNerd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\Montserrat\MontserratBlack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\ShadowIntoLight\ShadowIntoLight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\Aimbot\aimbot_t.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\FN index Manager\FN index Manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\NetVars\NetVarHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\TF object manager\TFOjectManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\BaseEntity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\Basic Structures.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\CommonFns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\IGameEventManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\INetworkStringTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\IPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\IVDebugOverlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\Source Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\baseWeapon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\bf_buf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Threads\thread1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\CVar Handler\CVarHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\ClassIDHandler\ClassIDHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Export Fn Handler\ExportFnHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Hook Handler\Hook_t.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Interface Handler\Interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Profiler\Profiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Profiler\ProfilerHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Signature Handler\signatures.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{680FACE1-DC9E-30AB-BF7B-74E3C5EC2BC1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

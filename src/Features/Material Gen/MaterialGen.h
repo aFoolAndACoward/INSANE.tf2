@@ -1,0 +1,183 @@
+//=========================================================================
+//                      MATERIAL GEN
+//=========================================================================
+// by      : INSANE
+// created : 17/08/2025
+// 
+// purpose : Helps create materials with live updates on models :).
+//-------------------------------------------------------------------------
+#pragma once
+
+#include <chrono>
+#include <vector>
+#include <string>
+#include <list>
+#include <atomic>
+#include "../FeatureHandler.h"
+
+
+class IMaterial;
+struct KeyValues;
+struct Material_t;
+struct MaterialBundle_t;
+struct TokenInfo_t;
+
+
+///////////////////////////////////////////////////////////////////////////
+enum TokenType_t : int
+{
+    TOKEN_UNDEFINED = -1,
+    TOKEN_KEYWORD = 0, TOKEN_VALUE,
+    TOKEN_COMMENT, TOKEN_PARENT,
+};
+struct TokenInfo_t
+{
+    int         m_iLine = 0;
+    int         m_iCol = 0;
+    TokenType_t m_iTokenType = TokenType_t::TOKEN_UNDEFINED;
+    std::string m_szToken = "";
+
+    const TokenInfo_t& operator=(TokenInfo_t& other)
+    {
+        m_szToken    = other.m_szToken;
+        m_iTokenType = other.m_iTokenType;
+        m_iCol       = other.m_iCol;
+        m_iLine      = other.m_iLine;
+
+        return *this;
+    }
+
+    void Reset();
+};
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+struct Material_t
+{
+    char m_materialData[2048]   = "";
+    std::vector<TokenInfo_t> m_vecTokens;
+    IMaterial* m_pMaterial      = nullptr;
+    KeyValues* m_pKeyValues     = nullptr;
+    bool       m_bSaved         = true;
+
+    std::string m_szMatName     = "( null )";
+    std::string m_szParentName  = "( null )";
+
+    char m_szRenameBuffer[128]  = "";
+    bool m_bRenameActive        = true;
+};
+struct MaterialBundle_t
+{
+    std::string m_szMatBundleName = "( null )";
+    std::vector<Material_t*> m_vecMaterials;
+
+    char m_szRenameBuffer[128] = "";
+    bool m_bExpanded           = false;
+    bool m_bRenameActive       = true;
+
+    bool operator==(const MaterialBundle_t& other) const
+    {
+        return m_szMatBundleName == other.m_szMatBundleName;
+    }
+};
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+class MaterialGen_t
+{
+public:
+    MaterialGen_t();
+
+    void Run();
+    void Free();
+
+    void SetVisible(bool bVisible);
+    bool IsVisible() const;
+
+    std::vector<Material_t*>* GetModelMaterials();
+
+    int                GetBestKeywordMatch() const;
+    const TokenInfo_t& GetActiveToken() const;
+
+    char*              GetModelSearchBuffer();
+    int                GetBestModelName() const;
+    void               MoveBestModelNameSuggIndex(int iOffset);
+    const std::string& GetModelNameAtIndex(int iIndex) const;
+
+    const std::vector<MaterialBundle_t>& GetMaterialList() const;
+
+    // Default materials...
+    bool CreateDefaultMaterials();
+    bool m_bDefaultMatInit = false;
+
+private:
+
+    // Drawing...
+    bool m_bVisible = false;
+    void _DrawImGui();
+    void _DrawTextEditor(float flWidth, float flHeight, float x, float y, float flRounding);
+    void _DrawMaterialList(float flWidth, float flHeight, float x, float y, float flRounding);
+    void _DrawTitleBar(float flWidth, float flHeight, float x, float y, float flRounding);
+    void _DrawModelPanelOverlay(float flWidth, float flHeight, float x, float y);
+
+    // Handling text buffers here...
+    void _ConstuctModelNameSuggestions(const char* szBuffer, uint32_t iBufferSize);
+    char m_szSearchBoxBuffer[512] = "";
+    std::vector<int> m_vecModelNameSuggestions;
+    int m_iBestModelNameSuggestion = -1;
+
+    void _ProcessBuffer(char * szBuffer, uint32_t iBufferSize);
+    void _SplitBuffer(std::vector<TokenInfo_t>& vecTokensOut, char * szBuffer, uint32_t iBufferSize) const;
+    void _ProcessTokens(std::vector<TokenInfo_t>& vecTokenOut, TokenInfo_t & activeTokenOut);
+    void _CreateSuggestionList(const std::string& szToken);
+    std::vector<int> m_vecSuggestions;
+    
+    // Handling model.
+    void _RotateModel();
+
+    std::chrono::high_resolution_clock::time_point m_lastModelRotateTime;
+    
+    // Rotation speed is defined as how much angle is covered ( in degrees ) 
+    // in one second.
+    float m_flModelRotationSpeed = 65.0f;
+
+    // Handling Materials here...
+    std::vector<MaterialBundle_t> m_vecMatBundles;
+    std::atomic<int> m_iActiveMatBundleIndex;
+    TokenInfo_t m_activeToken;
+    Material_t* m_pActiveTEMaterial = nullptr; // This is the material drawn to TextEditor
+
+    void _CreateMaterialBundle();
+    Material_t* _AddMaterialToBundle(MaterialBundle_t& matBundle);
+    void _DeleteMaterial(Material_t* pMat, MaterialBundle_t& matBundle);
+    void _DeleteMaterialBundle(MaterialBundle_t& matBundle);
+
+    void _RenameMaterialBundle(MaterialBundle_t& matBundle, std::string& szNewName);
+
+    void _RefreshMaterial(Material_t* pMaterial);
+
+    void _MakeMaterialNameUnique(std::string& szNameOut, const std::string & szBaseName, MaterialBundle_t& parentBundle) const;
+    void _MakeMaterialBundleNameUnique(std::string& szNameOut, const std::string & szBaseName) const;
+
+    // Saving & Loading material file.
+    void _SaveToFile();
+    void _LoadFromFile();
+    const char* m_szMatFileName = "Materials.txt";
+};
+///////////////////////////////////////////////////////////////////////////
+
+
+// VMT Keyword
+extern std::vector<std::string> g_vecVMTKeyWords;
+
+
+///////////////////////////////////////////////////////////////////////////
+
+
+DECLARE_FEATURE_OBJECT(materialGen, MaterialGen_t)
+
+DEFINE_TAB(MaterialGen, 9)
+DEFINE_SECTION(MaterialGen, "MaterialGen", 1)
+DEFINE_FEATURE(Enable, "Enable", bool, MaterialGen, MaterialGen, 1, false)

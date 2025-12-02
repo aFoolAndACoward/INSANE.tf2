@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{121F9A47-B556-306F-B267-B038A1102CA9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Insane_tf2</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Output\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Insane_tf2.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Insane_tf2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Output\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Insane_tf2.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Insane_tf2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Insane_tf2.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Insane_tf2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Insane_tf2.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Insane_tf2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /SUBSYSTEM:WINDOWS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug";Insane_tf2_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";Insane_tf2_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\includes\MinHook.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Lib/x64;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build/Debug/Insane_tf2.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Output/Debug/Insane_tf2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /SUBSYSTEM:WINDOWS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";Insane_tf2_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";Insane_tf2_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\includes\MinHook.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Lib/x64;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build/Release/Insane_tf2.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Output/Release/Insane_tf2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /SUBSYSTEM:WINDOWS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";Insane_tf2_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";Insane_tf2_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\includes\MinHook.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Lib/x64;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build/MinSizeRel/Insane_tf2.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build/MinSizeRel/Insane_tf2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /SUBSYSTEM:WINDOWS</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";Insane_tf2_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";Insane_tf2_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\includes\MinHook.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Lib/x64;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build/RelWithDebInfo/Insane_tf2.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build/RelWithDebInfo/Insane_tf2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SD:/Github Repos/INSANE.tf2 public release/INSANE.tf2" "-BD:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build" --check-stamp-file "D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeCXXCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeRCCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SD:/Github Repos/INSANE.tf2 public release/INSANE.tf2" "-BD:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build" --check-stamp-file "D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeCXXCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeRCCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SD:/Github Repos/INSANE.tf2 public release/INSANE.tf2" "-BD:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build" --check-stamp-file "D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeCXXCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeRCCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SD:/Github Repos/INSANE.tf2 public release/INSANE.tf2" "-BD:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build" --check-stamp-file "D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeCXXCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeRCCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Aimbot\Aimbot Melee\AimbotMelee.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Aimbot\Aimbot Projectile\AimbotProjectile.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Aimbot\AimbotHelper.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Aimbot\AimbotHitscanV2\AimbotHitscanV2.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\BulletTracers\BulletTarcers_t.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Config\ConfigHandler.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\CritHack\CritHack.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\DMEHandler\DMEHandler.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ESP\ESPV2.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Entity Iterator\EntityIterator.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\FeatureHandler.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Glow\Glow.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Draw Objects\BaseDrawObj.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Draw Objects\Box\Box.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Draw Objects\Circle\Circle.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Draw Objects\Cube\Cube.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Draw Objects\Line\Line.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Graphics.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine\DirectX Handler\DirectXHandler.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine\Draw Objects\DrawObj.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine\Graphics Engine\GraphicsEngine.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\AnimationHandler.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\InfoWindowV2\InfoWindow.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\KeybindPanel\KeybindPanel.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\MenuV2\MenuV2.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\NotificationSystem\NotificationSystem.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\PlayerList\PlayerListV2.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Material Gen\MaterialGen.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ModelPreview\ModelPreview.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Movement\Movement.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\MovementSimulation\MovementSimulation.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\NoSpread\NoSpreadV2.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Projectile Engine\ProjectileEngine.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Tick Shifting\TickShifting.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\TickManip\AntiAim\AntiAimV2.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\TickManip\TickManipHelper.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\WorldColorModulation\WorldColorModulation.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CBaseAnimating_SetupBones.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CClientState_Disconnect.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CGlowObjectManager_ApplyEntityGlowEffects.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CL_Move.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CNetChan_SendDatagram.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CTFWeaponBaseMelee_CalcIsAttackCritHelper.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CTFWeaponBase_CalcIsAttackCriticalHelper.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CViewRender_RenderView.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CheckForPureServerWhitelist\sv_pure.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\ClientModeShared_LevelInit.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CreateMove.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\DirectX Hook\DirectX_hook.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\DispatchUserMessage\DispatchUserMessage.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\DrawModelExecutes.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\EndScene\EndScene helper functions.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\EndScene\EndScene.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\FX_FireBullets.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\FrameStageNotify\FrameStageNotify.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\GetBulletTracers.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\GetFogColor.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\GetSkyboxFogColor.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\GetUserCmd.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\IClientRenderable_ShouldDraw.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\IStudioRender_DrawModelStaticProp.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\PaintTraverse.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\R_LoadSky.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\WinProc\WinProc.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\renderGlowEffect.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Libraries\Console System V2\ConsoleSystem.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Libraries\Utility\Utility.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\FontManager.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\JetBrains Mono NL\JetBrains Mono NL Light.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\JetBrains Mono NL\JetBrains Mono NL SemiBold.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\JetBrains Mono Nerd\JetBrainsMonoNerd.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\Montserrat\MontserratBlack.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\ShadowIntoLight\ShadowIntoLight.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\Aimbot\aimbot_t.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\FN index Manager\FN index Manager.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\NetVars\NetVarHandler.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\TF object manager\TFOjectManager.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\BaseEntity.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\Basic Structures.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\CommonFns.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\IGameEventManager.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\INetworkStringTable.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\IPanel.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\IVDebugOverlay.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\Source Entity.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\baseWeapon.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\bf_buf.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Threads\thread1.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\CVar Handler\CVarHandler.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\ClassIDHandler\ClassIDHandler.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Export Fn Handler\ExportFnHelper.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Hook Handler\Hook_t.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Interface Handler\Interface.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Profiler\Profiler.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Profiler\ProfilerHelper.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Signature Handler\signatures.cpp" />
+    <ClCompile Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\ZERO_CHECK.vcxproj">
+      <Project>{BC4AEC51-CB6E-3207-B197-EDE13977B907}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

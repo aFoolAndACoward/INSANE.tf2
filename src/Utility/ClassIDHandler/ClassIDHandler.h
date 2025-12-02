@@ -1,0 +1,807 @@
+#pragma once
+
+#include <cstdint>
+#include <unordered_map>
+#include <string>
+#include <vector>
+
+#include "../../Features/FeatureHandler.h"
+
+
+class BaseEntity;
+enum class ClassIDStatic_t : int32_t;
+
+
+///////////////////////////////////////////////////////////////////////////
+class ClassID_t
+{
+public:
+    ClassID_t(int* pDestination, const std::string& szClassName);
+
+    int*        m_pDestination = nullptr;
+    std::string m_szClassName;
+};
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+class ClassIDHandler_t
+{
+public:
+    void RegisterClassID(ClassID_t* pClassID);
+    bool Initialize();
+    bool IsInitialized() const;
+
+    ClassIDStatic_t GetStaticClassID(BaseEntity* pEnt);
+    ClassIDStatic_t GetStaticClassID(int iClassID);
+    ClassIDStatic_t InvalidStaticClassID();
+
+    const std::unordered_map<int, ClassIDStatic_t>* GetStaticClassIDMap();
+
+private:
+    bool m_bInitialized = false;
+    std::unordered_map<std::string, ClassID_t*> m_mapClassNameToID = {};
+    
+    bool _ConstructStaticClassIDMap();
+    std::unordered_map<std::string, ClassIDStatic_t> m_mapClassNameToStaticClassID = {};
+    std::unordered_map<int,         ClassIDStatic_t> m_mapClassIDtoStaticClassID   = {};
+};
+///////////////////////////////////////////////////////////////////////////
+
+DECLARE_FEATURE_OBJECT(classIDHandler, ClassIDHandler_t)
+
+#define REGISTER_CLASS_ID(szName)\
+namespace ClassID{ inline int szName = -1; }\
+namespace ClassID_Helper{ inline ClassID_t classid_##szName(&ClassID::szName, std::string(#szName));}
+
+
+// :)
+//REGISTER_CLASS_ID(CTFWearableRazorback)
+//REGISTER_CLASS_ID(CTFWearableDemoShield)
+//REGISTER_CLASS_ID(CTFWearableLevelableItem)
+//REGISTER_CLASS_ID(CTFWearableCampaignItem)
+//REGISTER_CLASS_ID(CTFBaseRocket)
+//REGISTER_CLASS_ID(CTFWeaponBaseMerasmusGrenade)
+//REGISTER_CLASS_ID(CTFWeaponBaseMelee)
+//REGISTER_CLASS_ID(CTFWeaponBaseGun)
+//REGISTER_CLASS_ID(CTFWeaponBaseGrenadeProj)
+//REGISTER_CLASS_ID(CTFWeaponBase)
+//REGISTER_CLASS_ID(CTFWearableRobotArm)
+//REGISTER_CLASS_ID(CTFRobotArm)
+//REGISTER_CLASS_ID(CTFWrench)
+REGISTER_CLASS_ID(CTFProjectile_ThrowableBreadMonster)
+REGISTER_CLASS_ID(CTFProjectile_ThrowableBrick)
+REGISTER_CLASS_ID(CTFProjectile_ThrowableRepel)
+REGISTER_CLASS_ID(CTFProjectile_Throwable)
+//REGISTER_CLASS_ID(CTFThrowable)
+//REGISTER_CLASS_ID(CTFSyringeGun)
+//REGISTER_CLASS_ID(CTFKatana)
+//REGISTER_CLASS_ID(CTFSword)
+//REGISTER_CLASS_ID(CSniperDot)
+//REGISTER_CLASS_ID(CTFSniperRifleClassic)
+//REGISTER_CLASS_ID(CTFSniperRifleDecap)
+//REGISTER_CLASS_ID(CTFSniperRifle)
+//REGISTER_CLASS_ID(CTFChargedSMG)
+//REGISTER_CLASS_ID(CTFSMG)
+//REGISTER_CLASS_ID(CTFSlap)
+//REGISTER_CLASS_ID(CTFShovel)
+//REGISTER_CLASS_ID(CTFShotgunBuildingRescue)
+//REGISTER_CLASS_ID(CTFPEPBrawlerBlaster)
+//REGISTER_CLASS_ID(CTFSodaPopper)
+//REGISTER_CLASS_ID(CTFShotgun_Revenge)
+//REGISTER_CLASS_ID(CTFScatterGun)
+//REGISTER_CLASS_ID(CTFShotgun_Pyro)
+//REGISTER_CLASS_ID(CTFShotgun_HWG)
+//REGISTER_CLASS_ID(CTFShotgun_Soldier)
+//REGISTER_CLASS_ID(CTFShotgun)
+//REGISTER_CLASS_ID(CTFRocketPack)
+//REGISTER_CLASS_ID(CTFCrossbow)
+//REGISTER_CLASS_ID(CTFRocketLauncher_Mortar)
+//REGISTER_CLASS_ID(CTFRocketLauncher_AirStrike)
+//REGISTER_CLASS_ID(CTFRocketLauncher_DirectHit)
+//REGISTER_CLASS_ID(CTFRocketLauncher)
+//REGISTER_CLASS_ID(CTFRevolver)
+//REGISTER_CLASS_ID(CTFDRGPomson)
+//REGISTER_CLASS_ID(CTFRaygun)
+//REGISTER_CLASS_ID(CTFPistol_ScoutSecondary)
+//REGISTER_CLASS_ID(CTFPistol_ScoutPrimary)
+//REGISTER_CLASS_ID(CTFPistol_Scout)
+//REGISTER_CLASS_ID(CTFPistol)
+//REGISTER_CLASS_ID(CTFPipebombLauncher)
+//REGISTER_CLASS_ID(CTFWeaponPDA_Spy)
+//REGISTER_CLASS_ID(CTFWeaponPDA_Engineer_Destroy)
+//REGISTER_CLASS_ID(CTFWeaponPDA_Engineer_Build)
+//REGISTER_CLASS_ID(CTFWeaponPDAExpansion_Teleporter)
+//REGISTER_CLASS_ID(CTFWeaponPDAExpansion_Dispenser)
+//REGISTER_CLASS_ID(CTFWeaponPDA)
+//REGISTER_CLASS_ID(CTFParticleCannon)
+//REGISTER_CLASS_ID(CTFParachute_Secondary)
+//REGISTER_CLASS_ID(CTFParachute_Primary)
+//REGISTER_CLASS_ID(CTFParachute)
+//REGISTER_CLASS_ID(CTFMinigun)
+//REGISTER_CLASS_ID(CTFMedigunShield)
+//REGISTER_CLASS_ID(CWeaponMedigun)
+REGISTER_CLASS_ID(CTFProjectile_MechanicalArmOrb)
+//REGISTER_CLASS_ID(CTFMechanicalArm)
+//REGISTER_CLASS_ID(CTFLunchBox_Drink)
+//REGISTER_CLASS_ID(CTFLunchBox)
+//REGISTER_CLASS_ID(CLaserDot)
+//REGISTER_CLASS_ID(CTFLaserPointer)
+//REGISTER_CLASS_ID(CTFKnife)
+//REGISTER_CLASS_ID(CTFGasManager)
+REGISTER_CLASS_ID(CTFProjectile_JarGas)
+//REGISTER_CLASS_ID(CTFJarGas)
+REGISTER_CLASS_ID(CTFProjectile_Cleaver)
+REGISTER_CLASS_ID(CTFProjectile_JarMilk)
+REGISTER_CLASS_ID(CTFProjectile_Jar)
+//REGISTER_CLASS_ID(CTFCleaver)
+//REGISTER_CLASS_ID(CTFJarMilk)
+//REGISTER_CLASS_ID(CTFJar)
+//REGISTER_CLASS_ID(CTFWeaponInvis)
+//REGISTER_CLASS_ID(CTFCannon)
+//REGISTER_CLASS_ID(CTFGrenadeLauncher)
+REGISTER_CLASS_ID(CTFGrenadePipebombProjectile)
+//REGISTER_CLASS_ID(CTFGrapplingHook)
+//REGISTER_CLASS_ID(CTFFlareGun_Revenge)
+//REGISTER_CLASS_ID(CTFFlareGun)
+//REGISTER_CLASS_ID(CTFFlameRocket)
+//REGISTER_CLASS_ID(CTFFlameThrower)
+//REGISTER_CLASS_ID(CTFFists)
+//REGISTER_CLASS_ID(CTFFireAxe)
+//REGISTER_CLASS_ID(CTFWeaponFlameBall)
+//REGISTER_CLASS_ID(CTFCompoundBow)
+//REGISTER_CLASS_ID(CTFClub)
+//REGISTER_CLASS_ID(CTFBuffItem)
+REGISTER_CLASS_ID(CTFStickBomb)
+//REGISTER_CLASS_ID(CTFBreakableSign)
+//REGISTER_CLASS_ID(CTFBottle)
+//REGISTER_CLASS_ID(CTFBreakableMelee)
+//REGISTER_CLASS_ID(CTFBonesaw)
+REGISTER_CLASS_ID(CTFBall_Ornament)
+REGISTER_CLASS_ID(CTFStunBall)
+//REGISTER_CLASS_ID(CTFBat_Giftwrap)
+//REGISTER_CLASS_ID(CTFBat_Wood)
+//REGISTER_CLASS_ID(CTFBat_Fish)
+//REGISTER_CLASS_ID(CTFBat)
+REGISTER_CLASS_ID(CTFProjectile_EnergyRing)
+REGISTER_CLASS_ID(CTFDroppedWeapon)
+//REGISTER_CLASS_ID(CTFWeaponSapper)
+//REGISTER_CLASS_ID(CTFWeaponBuilder)
+//REGISTER_CLASS_ID(C_TFWeaponBuilder)
+REGISTER_CLASS_ID(CTFProjectile_Rocket)
+REGISTER_CLASS_ID(CTFProjectile_Flare)
+REGISTER_CLASS_ID(CTFProjectile_EnergyBall)
+REGISTER_CLASS_ID(CTFProjectile_GrapplingHook)
+REGISTER_CLASS_ID(CTFProjectile_HealingBolt)
+REGISTER_CLASS_ID(CTFProjectile_Arrow)
+//REGISTER_CLASS_ID(CMannVsMachineStats)
+//REGISTER_CLASS_ID(CTFTankBoss)
+//REGISTER_CLASS_ID(CTFBaseBoss)
+//REGISTER_CLASS_ID(CBossAlpha)
+//REGISTER_CLASS_ID(NextBotCombatCharacter)
+REGISTER_CLASS_ID(CTFProjectile_SpellKartBats)
+REGISTER_CLASS_ID(CTFProjectile_SpellKartOrb)
+//REGISTER_CLASS_ID(CTFHellZap)
+REGISTER_CLASS_ID(CTFProjectile_SpellLightningOrb)
+REGISTER_CLASS_ID(CTFProjectile_SpellTransposeTeleport)
+REGISTER_CLASS_ID(CTFProjectile_SpellMeteorShower)
+REGISTER_CLASS_ID(CTFProjectile_SpellSpawnBoss)
+REGISTER_CLASS_ID(CTFProjectile_SpellMirv)
+REGISTER_CLASS_ID(CTFProjectile_SpellPumpkin)
+REGISTER_CLASS_ID(CTFProjectile_SpellSpawnHorde)
+REGISTER_CLASS_ID(CTFProjectile_SpellSpawnZombie)
+REGISTER_CLASS_ID(CTFProjectile_SpellBats)
+REGISTER_CLASS_ID(CTFProjectile_SpellFireball)
+//REGISTER_CLASS_ID(CTFSpellBook)
+//REGISTER_CLASS_ID(CHightower_TeleportVortex)
+//REGISTER_CLASS_ID(CTeleportVortex)
+//REGISTER_CLASS_ID(CZombie)
+//REGISTER_CLASS_ID(CMerasmusDancer)
+//REGISTER_CLASS_ID(CMerasmus)
+//REGISTER_CLASS_ID(CHeadlessHatman)
+//REGISTER_CLASS_ID(CEyeballBoss)
+//REGISTER_CLASS_ID(CTFBotHintEngineerNest)
+//REGISTER_CLASS_ID(CBotNPCMinion)
+//REGISTER_CLASS_ID(CBotNPC)
+//REGISTER_CLASS_ID(CPasstimeGun)
+REGISTER_CLASS_ID(CTFViewModel)
+//REGISTER_CLASS_ID(CRobotDispenser)
+//REGISTER_CLASS_ID(CTFRobotDestruction_Robot)
+//REGISTER_CLASS_ID(CTFReviveMarker)
+//REGISTER_CLASS_ID(CTFPumpkinBomb)
+REGISTER_CLASS_ID(CTFProjectile_BallOfFire)
+//REGISTER_CLASS_ID(CTFBaseProjectile)
+//REGISTER_CLASS_ID(CTFPointManager)
+//REGISTER_CLASS_ID(CBaseObjectUpgrade)
+//REGISTER_CLASS_ID(CTFRobotDestructionLogic)
+//REGISTER_CLASS_ID(CTFRobotDestruction_RobotGroup)
+//REGISTER_CLASS_ID(CTFRobotDestruction_RobotSpawn)
+//REGISTER_CLASS_ID(CTFPlayerDestructionLogic)
+//REGISTER_CLASS_ID(CPlayerDestructionDispenser)
+//REGISTER_CLASS_ID(CTFMinigameLogic)
+//REGISTER_CLASS_ID(CTFHalloweenMinigame_FallingPlatforms)
+//REGISTER_CLASS_ID(CTFHalloweenMinigame)
+//REGISTER_CLASS_ID(CTFMiniGame)
+//REGISTER_CLASS_ID(CTFPowerupBottle)
+//REGISTER_CLASS_ID(CTFItem)
+//REGISTER_CLASS_ID(CHalloweenSoulPack)
+//REGISTER_CLASS_ID(CTFGenericBomb)
+//REGISTER_CLASS_ID(CBonusRoundLogic)
+//REGISTER_CLASS_ID(CTFGameRulesProxy)
+//REGISTER_CLASS_ID(CTETFParticleEffect)
+//REGISTER_CLASS_ID(CTETFExplosion)
+//REGISTER_CLASS_ID(CTETFBlood)
+//REGISTER_CLASS_ID(CTFFlameManager)
+//REGISTER_CLASS_ID(CHalloweenGiftPickup)
+//REGISTER_CLASS_ID(CBonusDuckPickup)
+//REGISTER_CLASS_ID(CHalloweenPickup)
+//REGISTER_CLASS_ID(CCaptureFlagReturnIcon)
+//REGISTER_CLASS_ID(CCaptureFlag)
+//REGISTER_CLASS_ID(CBonusPack)
+//REGISTER_CLASS_ID(CTFTeam)
+//REGISTER_CLASS_ID(CTFTauntProp)
+//REGISTER_CLASS_ID(CTFPlayerResource)
+REGISTER_CLASS_ID(CTFPlayer)
+//REGISTER_CLASS_ID(CTFRagdoll)
+//REGISTER_CLASS_ID(CTEPlayerAnimEvent)
+//REGISTER_CLASS_ID(CTFPasstimeLogic)
+//REGISTER_CLASS_ID(CPasstimeBall)
+//REGISTER_CLASS_ID(CTFObjectiveResource)
+//REGISTER_CLASS_ID(CTFGlow)
+REGISTER_CLASS_ID(CTEFireBullets)
+//REGISTER_CLASS_ID(CTFBuffBanner)
+REGISTER_CLASS_ID(CTFAmmoPack)
+REGISTER_CLASS_ID(CObjectTeleporter)
+REGISTER_CLASS_ID(CObjectSentrygun)
+REGISTER_CLASS_ID(CTFProjectile_SentryRocket)
+//REGISTER_CLASS_ID(CObjectSapper)
+//REGISTER_CLASS_ID(CObjectCartDispenser)
+REGISTER_CLASS_ID(CObjectDispenser)
+//REGISTER_CLASS_ID(CMonsterResource)
+REGISTER_CLASS_ID(CFuncRespawnRoomVisualizer)
+//REGISTER_CLASS_ID(CFuncRespawnRoom)
+//REGISTER_CLASS_ID(CFuncPasstimeGoal)
+//REGISTER_CLASS_ID(CFuncForceField)
+//REGISTER_CLASS_ID(CCaptureZone)
+//REGISTER_CLASS_ID(CCurrencyPack)
+//REGISTER_CLASS_ID(CBaseObject)
+//REGISTER_CLASS_ID(CTestTraceline)
+//REGISTER_CLASS_ID(CTEWorldDecal)
+//REGISTER_CLASS_ID(CTESpriteSpray)
+//REGISTER_CLASS_ID(CTESprite)
+//REGISTER_CLASS_ID(CTESparks)
+//REGISTER_CLASS_ID(CTESmoke)
+//REGISTER_CLASS_ID(CTEShowLine)
+//REGISTER_CLASS_ID(CTEProjectedDecal)
+//REGISTER_CLASS_ID(CTEPlayerDecal)
+//REGISTER_CLASS_ID(CTEPhysicsProp)
+//REGISTER_CLASS_ID(CTEParticleSystem)
+//REGISTER_CLASS_ID(CTEMuzzleFlash)
+//REGISTER_CLASS_ID(CTELargeFunnel)
+//REGISTER_CLASS_ID(CTEKillPlayerAttachments)
+//REGISTER_CLASS_ID(CTEImpact)
+//REGISTER_CLASS_ID(CTEGlowSprite)
+//REGISTER_CLASS_ID(CTEShatterSurface)
+//REGISTER_CLASS_ID(CTEFootprintDecal)
+//REGISTER_CLASS_ID(CTEFizz)
+//REGISTER_CLASS_ID(CTEExplosion)
+//REGISTER_CLASS_ID(CTEEnergySplash)
+//REGISTER_CLASS_ID(CTEEffectDispatch)
+//REGISTER_CLASS_ID(CTEDynamicLight)
+//REGISTER_CLASS_ID(CTEDecal)
+//REGISTER_CLASS_ID(CTEClientProjectile)
+//REGISTER_CLASS_ID(CTEBubbleTrail)
+//REGISTER_CLASS_ID(CTEBubbles)
+//REGISTER_CLASS_ID(CTEBSPDecal)
+//REGISTER_CLASS_ID(CTEBreakModel)
+//REGISTER_CLASS_ID(CTEBloodStream)
+//REGISTER_CLASS_ID(CTEBloodSprite)
+//REGISTER_CLASS_ID(CTEBeamSpline)
+//REGISTER_CLASS_ID(CTEBeamRingPoint)
+//REGISTER_CLASS_ID(CTEBeamRing)
+//REGISTER_CLASS_ID(CTEBeamPoints)
+//REGISTER_CLASS_ID(CTEBeamLaser)
+//REGISTER_CLASS_ID(CTEBeamFollow)
+//REGISTER_CLASS_ID(CTEBeamEnts)
+//REGISTER_CLASS_ID(CTEBeamEntPoint)
+//REGISTER_CLASS_ID(CTEBaseBeam)
+//REGISTER_CLASS_ID(CTEArmorRicochet)
+//REGISTER_CLASS_ID(CTEMetalSparks)
+//REGISTER_CLASS_ID(CSteamJet)
+//REGISTER_CLASS_ID(CSmokeStack)
+//REGISTER_CLASS_ID(DustTrail)
+//REGISTER_CLASS_ID(CFireTrail)
+//REGISTER_CLASS_ID(SporeTrail)
+//REGISTER_CLASS_ID(SporeExplosion)
+//REGISTER_CLASS_ID(RocketTrail)
+//REGISTER_CLASS_ID(SmokeTrail)
+//REGISTER_CLASS_ID(CPropVehicleDriveable)
+//REGISTER_CLASS_ID(ParticleSmokeGrenade)
+//REGISTER_CLASS_ID(CParticleFire)
+//REGISTER_CLASS_ID(MovieExplosion)
+//REGISTER_CLASS_ID(CTEGaussExplosion)
+//REGISTER_CLASS_ID(CEnvQuadraticBeam)
+//REGISTER_CLASS_ID(CEmbers)
+//REGISTER_CLASS_ID(CEnvWind)
+//REGISTER_CLASS_ID(CPrecipitation)
+//REGISTER_CLASS_ID(CBaseTempEntity)
+//REGISTER_CLASS_ID(CWeaponIFMSteadyCam)
+//REGISTER_CLASS_ID(CWeaponIFMBaseCamera)
+//REGISTER_CLASS_ID(CWeaponIFMBase)
+//REGISTER_CLASS_ID(CTFWearableVM)
+//REGISTER_CLASS_ID(CTFWearable)
+//REGISTER_CLASS_ID(CTFWearableItem)
+//REGISTER_CLASS_ID(CEconWearable)
+//REGISTER_CLASS_ID(CBaseAttributableItem)
+//REGISTER_CLASS_ID(CEconEntity)
+//REGISTER_CLASS_ID(CHandleTest)
+//REGISTER_CLASS_ID(CTeamplayRoundBasedRulesProxy)
+//REGISTER_CLASS_ID(CTeamRoundTimer)
+//REGISTER_CLASS_ID(CSpriteTrail)
+//REGISTER_CLASS_ID(CSpriteOriented)
+//REGISTER_CLASS_ID(CSprite)
+//REGISTER_CLASS_ID(CRagdollPropAttached)
+//REGISTER_CLASS_ID(CRagdollProp)
+//REGISTER_CLASS_ID(CPoseController)
+//REGISTER_CLASS_ID(CGameRulesProxy)
+//REGISTER_CLASS_ID(CInfoLadderDismount)
+//REGISTER_CLASS_ID(CFuncLadder)
+//REGISTER_CLASS_ID(CEnvDetailController)
+//REGISTER_CLASS_ID(CWorld)
+//REGISTER_CLASS_ID(CWaterLODControl)
+//REGISTER_CLASS_ID(CWaterBullet)
+//REGISTER_CLASS_ID(CVoteController)
+//REGISTER_CLASS_ID(CVGuiScreen)
+//REGISTER_CLASS_ID(CPropJeep)
+//REGISTER_CLASS_ID(CPropVehicleChoreoGeneric)
+//REGISTER_CLASS_ID(CTest_ProxyToggle_Networkable)
+//REGISTER_CLASS_ID(CTesla)
+//REGISTER_CLASS_ID(CTeamTrainWatcher)
+//REGISTER_CLASS_ID(CBaseTeamObjectiveResource)
+//REGISTER_CLASS_ID(CTeam)
+//REGISTER_CLASS_ID(CSun)
+//REGISTER_CLASS_ID(CParticlePerformanceMonitor)
+//REGISTER_CLASS_ID(CSpotlightEnd)
+//REGISTER_CLASS_ID(CSlideshowDisplay)
+//REGISTER_CLASS_ID(CShadowControl)
+//REGISTER_CLASS_ID(CSceneEntity)
+//REGISTER_CLASS_ID(CRopeKeyframe)
+//REGISTER_CLASS_ID(CRagdollManager)
+//REGISTER_CLASS_ID(CPhysicsPropMultiplayer)
+//REGISTER_CLASS_ID(CPhysBoxMultiplayer)
+//REGISTER_CLASS_ID(CBasePropDoor)
+//REGISTER_CLASS_ID(CDynamicProp)
+//REGISTER_CLASS_ID(CPointWorldText)
+//REGISTER_CLASS_ID(CPointCommentaryNode)
+//REGISTER_CLASS_ID(CPointCamera)
+//REGISTER_CLASS_ID(CPlayerResource)
+//REGISTER_CLASS_ID(CPlasma)
+//REGISTER_CLASS_ID(CPhysMagnet)
+//REGISTER_CLASS_ID(CPhysicsProp)
+//REGISTER_CLASS_ID(CPhysBox)
+//REGISTER_CLASS_ID(CParticleSystem)
+//REGISTER_CLASS_ID(CMaterialModifyControl)
+//REGISTER_CLASS_ID(CLightGlow)
+//REGISTER_CLASS_ID(CInfoOverlayAccessor)
+//REGISTER_CLASS_ID(CFuncTrackTrain)
+//REGISTER_CLASS_ID(CFuncSmokeVolume)
+//REGISTER_CLASS_ID(CFuncRotating)
+//REGISTER_CLASS_ID(CFuncReflectiveGlass)
+//REGISTER_CLASS_ID(CFuncOccluder)
+//REGISTER_CLASS_ID(CFuncMonitor)
+//REGISTER_CLASS_ID(CFunc_LOD)
+//REGISTER_CLASS_ID(CTEDust)
+//REGISTER_CLASS_ID(CFunc_Dust)
+//REGISTER_CLASS_ID(CFuncConveyor)
+//REGISTER_CLASS_ID(CBreakableSurface)
+//REGISTER_CLASS_ID(CFuncAreaPortalWindow)
+//REGISTER_CLASS_ID(CFish)
+//REGISTER_CLASS_ID(CEntityFlame)
+//REGISTER_CLASS_ID(CFireSmoke)
+//REGISTER_CLASS_ID(CEnvTonemapController)
+//REGISTER_CLASS_ID(CEnvScreenEffect)
+//REGISTER_CLASS_ID(CEnvScreenOverlay)
+//REGISTER_CLASS_ID(CEnvProjectedTexture)
+//REGISTER_CLASS_ID(CEnvParticleScript)
+//REGISTER_CLASS_ID(CFogController)
+//REGISTER_CLASS_ID(CEntityParticleTrail)
+//REGISTER_CLASS_ID(CEntityDissolve)
+//REGISTER_CLASS_ID(CDynamicLight)
+//REGISTER_CLASS_ID(CColorCorrectionVolume)
+//REGISTER_CLASS_ID(CColorCorrection)
+//REGISTER_CLASS_ID(CBreakableProp)
+//REGISTER_CLASS_ID(CBasePlayer)
+//REGISTER_CLASS_ID(CBaseFlex)
+//REGISTER_CLASS_ID(CBaseEntity)
+//REGISTER_CLASS_ID(CBaseDoor)
+//REGISTER_CLASS_ID(CBaseCombatCharacter)
+//REGISTER_CLASS_ID(CBaseAnimatingOverlay)
+//REGISTER_CLASS_ID(CBoneFollower)
+REGISTER_CLASS_ID(CBaseAnimating)
+//REGISTER_CLASS_ID(CInfoLightingRelative)
+//REGISTER_CLASS_ID(CAI_BaseNPC)
+//REGISTER_CLASS_ID(CBeam)
+REGISTER_CLASS_ID(CBaseViewModel)
+//REGISTER_CLASS_ID(CBaseProjectile)
+//REGISTER_CLASS_ID(CBaseParticleEntity)
+//REGISTER_CLASS_ID(CBaseGrenade)
+//REGISTER_CLASS_ID(CBaseCombatWeapon)
+
+
+///////////////////////////////////////////////////////////////////////////
+enum class ClassIDStatic_t : int32_t
+{
+    CLASSIDSTATIC_INVALID = -1,
+    ClassIDStatic_CTFWearableRazorback = 0,
+    ClassIDStatic_CTFWearableDemoShield,
+    ClassIDStatic_CTFWearableLevelableItem,
+    ClassIDStatic_CTFWearableCampaignItem,
+    ClassIDStatic_CTFBaseRocket,
+    ClassIDStatic_CTFWeaponBaseMerasmusGrenade,
+    ClassIDStatic_CTFWeaponBaseMelee,
+    ClassIDStatic_CTFWeaponBaseGun,
+    ClassIDStatic_CTFWeaponBaseGrenadeProj,
+    ClassIDStatic_CTFWeaponBase,
+    ClassIDStatic_CTFWearableRobotArm,
+    ClassIDStatic_CTFRobotArm,
+    ClassIDStatic_CTFWrench,
+    ClassIDStatic_CTFProjectile_ThrowableBreadMonster,
+    ClassIDStatic_CTFProjectile_ThrowableBrick,
+    ClassIDStatic_CTFProjectile_ThrowableRepel,
+    ClassIDStatic_CTFProjectile_Throwable,
+    ClassIDStatic_CTFThrowable,
+    ClassIDStatic_CTFSyringeGun,
+    ClassIDStatic_CTFKatana,
+    ClassIDStatic_CTFSword,
+    ClassIDStatic_CSniperDot,
+    ClassIDStatic_CTFSniperRifleClassic,
+    ClassIDStatic_CTFSniperRifleDecap,
+    ClassIDStatic_CTFSniperRifle,
+    ClassIDStatic_CTFChargedSMG,
+    ClassIDStatic_CTFSMG,
+    ClassIDStatic_CTFSlap,
+    ClassIDStatic_CTFShovel,
+    ClassIDStatic_CTFShotgunBuildingRescue,
+    ClassIDStatic_CTFPEPBrawlerBlaster,
+    ClassIDStatic_CTFSodaPopper,
+    ClassIDStatic_CTFShotgun_Revenge,
+    ClassIDStatic_CTFScatterGun,
+    ClassIDStatic_CTFShotgun_Pyro,
+    ClassIDStatic_CTFShotgun_HWG,
+    ClassIDStatic_CTFShotgun_Soldier,
+    ClassIDStatic_CTFShotgun,
+    ClassIDStatic_CTFRocketPack,
+    ClassIDStatic_CTFCrossbow,
+    ClassIDStatic_CTFRocketLauncher_Mortar,
+    ClassIDStatic_CTFRocketLauncher_AirStrike,
+    ClassIDStatic_CTFRocketLauncher_DirectHit,
+    ClassIDStatic_CTFRocketLauncher,
+    ClassIDStatic_CTFRevolver,
+    ClassIDStatic_CTFDRGPomson,
+    ClassIDStatic_CTFRaygun,
+    ClassIDStatic_CTFPistol_ScoutSecondary,
+    ClassIDStatic_CTFPistol_ScoutPrimary,
+    ClassIDStatic_CTFPistol_Scout,
+    ClassIDStatic_CTFPistol,
+    ClassIDStatic_CTFPipebombLauncher,
+    ClassIDStatic_CTFWeaponPDA_Spy,
+    ClassIDStatic_CTFWeaponPDA_Engineer_Destroy,
+    ClassIDStatic_CTFWeaponPDA_Engineer_Build,
+    ClassIDStatic_CTFWeaponPDAExpansion_Teleporter,
+    ClassIDStatic_CTFWeaponPDAExpansion_Dispenser,
+    ClassIDStatic_CTFWeaponPDA,
+    ClassIDStatic_CTFParticleCannon,
+    ClassIDStatic_CTFParachute_Secondary,
+    ClassIDStatic_CTFParachute_Primary,
+    ClassIDStatic_CTFParachute,
+    ClassIDStatic_CTFMinigun,
+    ClassIDStatic_CTFMedigunShield,
+    ClassIDStatic_CWeaponMedigun,
+    ClassIDStatic_CTFProjectile_MechanicalArmOrb,
+    ClassIDStatic_CTFMechanicalArm,
+    ClassIDStatic_CTFLunchBox_Drink,
+    ClassIDStatic_CTFLunchBox,
+    ClassIDStatic_CLaserDot,
+    ClassIDStatic_CTFLaserPointer,
+    ClassIDStatic_CTFKnife,
+    ClassIDStatic_CTFGasManager,
+    ClassIDStatic_CTFProjectile_JarGas,
+    ClassIDStatic_CTFJarGas,
+    ClassIDStatic_CTFProjectile_Cleaver,
+    ClassIDStatic_CTFProjectile_JarMilk,
+    ClassIDStatic_CTFProjectile_Jar,
+    ClassIDStatic_CTFCleaver,
+    ClassIDStatic_CTFJarMilk,
+    ClassIDStatic_CTFJar,
+    ClassIDStatic_CTFWeaponInvis,
+    ClassIDStatic_CTFCannon,
+    ClassIDStatic_CTFGrenadeLauncher,
+    ClassIDStatic_CTFGrenadePipebombProjectile,
+    ClassIDStatic_CTFGrapplingHook,
+    ClassIDStatic_CTFFlareGun_Revenge,
+    ClassIDStatic_CTFFlareGun,
+    ClassIDStatic_CTFFlameRocket,
+    ClassIDStatic_CTFFlameThrower,
+    ClassIDStatic_CTFFists,
+    ClassIDStatic_CTFFireAxe,
+    ClassIDStatic_CTFWeaponFlameBall,
+    ClassIDStatic_CTFCompoundBow,
+    ClassIDStatic_CTFClub,
+    ClassIDStatic_CTFBuffItem,
+    ClassIDStatic_CTFStickBomb,
+    ClassIDStatic_CTFBreakableSign,
+    ClassIDStatic_CTFBottle,
+    ClassIDStatic_CTFBreakableMelee,
+    ClassIDStatic_CTFBonesaw,
+    ClassIDStatic_CTFBall_Ornament,
+    ClassIDStatic_CTFStunBall,
+    ClassIDStatic_CTFBat_Giftwrap,
+    ClassIDStatic_CTFBat_Wood,
+    ClassIDStatic_CTFBat_Fish,
+    ClassIDStatic_CTFBat,
+    ClassIDStatic_CTFProjectile_EnergyRing,
+    ClassIDStatic_CTFDroppedWeapon,
+    ClassIDStatic_CTFWeaponSapper,
+    ClassIDStatic_CTFWeaponBuilder,
+    ClassIDStatic_C_TFWeaponBuilder,
+    ClassIDStatic_CTFProjectile_Rocket,
+    ClassIDStatic_CTFProjectile_Flare,
+    ClassIDStatic_CTFProjectile_EnergyBall,
+    ClassIDStatic_CTFProjectile_GrapplingHook,
+    ClassIDStatic_CTFProjectile_HealingBolt,
+    ClassIDStatic_CTFProjectile_Arrow,
+    ClassIDStatic_CMannVsMachineStats,
+    ClassIDStatic_CTFTankBoss,
+    ClassIDStatic_CTFBaseBoss,
+    ClassIDStatic_CBossAlpha,
+    ClassIDStatic_NextBotCombatCharacter,
+    ClassIDStatic_CTFProjectile_SpellKartBats,
+    ClassIDStatic_CTFProjectile_SpellKartOrb,
+    ClassIDStatic_CTFHellZap,
+    ClassIDStatic_CTFProjectile_SpellLightningOrb,
+    ClassIDStatic_CTFProjectile_SpellTransposeTeleport,
+    ClassIDStatic_CTFProjectile_SpellMeteorShower,
+    ClassIDStatic_CTFProjectile_SpellSpawnBoss,
+    ClassIDStatic_CTFProjectile_SpellMirv,
+    ClassIDStatic_CTFProjectile_SpellPumpkin,
+    ClassIDStatic_CTFProjectile_SpellSpawnHorde,
+    ClassIDStatic_CTFProjectile_SpellSpawnZombie,
+    ClassIDStatic_CTFProjectile_SpellBats,
+    ClassIDStatic_CTFProjectile_SpellFireball,
+    ClassIDStatic_CTFSpellBook,
+    ClassIDStatic_CHightower_TeleportVortex,
+    ClassIDStatic_CTeleportVortex,
+    ClassIDStatic_CZombie,
+    ClassIDStatic_CMerasmusDancer,
+    ClassIDStatic_CMerasmus,
+    ClassIDStatic_CHeadlessHatman,
+    ClassIDStatic_CEyeballBoss,
+    ClassIDStatic_CTFBotHintEngineerNest,
+    ClassIDStatic_CBotNPCMinion,
+    ClassIDStatic_CBotNPC,
+    ClassIDStatic_CPasstimeGun,
+    ClassIDStatic_CTFViewModel,
+    ClassIDStatic_CRobotDispenser,
+    ClassIDStatic_CTFRobotDestruction_Robot,
+    ClassIDStatic_CTFReviveMarker,
+    ClassIDStatic_CTFPumpkinBomb,
+    ClassIDStatic_CTFProjectile_BallOfFire,
+    ClassIDStatic_CTFBaseProjectile,
+    ClassIDStatic_CTFPointManager,
+    ClassIDStatic_CBaseObjectUpgrade,
+    ClassIDStatic_CTFRobotDestructionLogic,
+    ClassIDStatic_CTFRobotDestruction_RobotGroup,
+    ClassIDStatic_CTFRobotDestruction_RobotSpawn,
+    ClassIDStatic_CTFPlayerDestructionLogic,
+    ClassIDStatic_CPlayerDestructionDispenser,
+    ClassIDStatic_CTFMinigameLogic,
+    ClassIDStatic_CTFHalloweenMinigame_FallingPlatforms,
+    ClassIDStatic_CTFHalloweenMinigame,
+    ClassIDStatic_CTFMiniGame,
+    ClassIDStatic_CTFPowerupBottle,
+    ClassIDStatic_CTFItem,
+    ClassIDStatic_CHalloweenSoulPack,
+    ClassIDStatic_CTFGenericBomb,
+    ClassIDStatic_CBonusRoundLogic,
+    ClassIDStatic_CTFGameRulesProxy,
+    ClassIDStatic_CTETFParticleEffect,
+    ClassIDStatic_CTETFExplosion,
+    ClassIDStatic_CTETFBlood,
+    ClassIDStatic_CTFFlameManager,
+    ClassIDStatic_CHalloweenGiftPickup,
+    ClassIDStatic_CBonusDuckPickup,
+    ClassIDStatic_CHalloweenPickup,
+    ClassIDStatic_CCaptureFlagReturnIcon,
+    ClassIDStatic_CCaptureFlag,
+    ClassIDStatic_CBonusPack,
+    ClassIDStatic_CTFTeam,
+    ClassIDStatic_CTFTauntProp,
+    ClassIDStatic_CTFPlayerResource,
+    ClassIDStatic_CTFPlayer,
+    ClassIDStatic_CTFRagdoll,
+    ClassIDStatic_CTEPlayerAnimEvent,
+    ClassIDStatic_CTFPasstimeLogic,
+    ClassIDStatic_CPasstimeBall,
+    ClassIDStatic_CTFObjectiveResource,
+    ClassIDStatic_CTFGlow,
+    ClassIDStatic_CTEFireBullets,
+    ClassIDStatic_CTFBuffBanner,
+    ClassIDStatic_CTFAmmoPack,
+    ClassIDStatic_CObjectTeleporter,
+    ClassIDStatic_CObjectSentrygun,
+    ClassIDStatic_CTFProjectile_SentryRocket,
+    ClassIDStatic_CObjectSapper,
+    ClassIDStatic_CObjectCartDispenser,
+    ClassIDStatic_CObjectDispenser,
+    ClassIDStatic_CMonsterResource,
+    ClassIDStatic_CFuncRespawnRoomVisualizer,
+    ClassIDStatic_CFuncRespawnRoom,
+    ClassIDStatic_CFuncPasstimeGoal,
+    ClassIDStatic_CFuncForceField,
+    ClassIDStatic_CCaptureZone,
+    ClassIDStatic_CCurrencyPack,
+    ClassIDStatic_CBaseObject,
+    ClassIDStatic_CTestTraceline,
+    ClassIDStatic_CTEWorldDecal,
+    ClassIDStatic_CTESpriteSpray,
+    ClassIDStatic_CTESprite,
+    ClassIDStatic_CTESparks,
+    ClassIDStatic_CTESmoke,
+    ClassIDStatic_CTEShowLine,
+    ClassIDStatic_CTEProjectedDecal,
+    ClassIDStatic_CTEPlayerDecal,
+    ClassIDStatic_CTEPhysicsProp,
+    ClassIDStatic_CTEParticleSystem,
+    ClassIDStatic_CTEMuzzleFlash,
+    ClassIDStatic_CTELargeFunnel,
+    ClassIDStatic_CTEKillPlayerAttachments,
+    ClassIDStatic_CTEImpact,
+    ClassIDStatic_CTEGlowSprite,
+    ClassIDStatic_CTEShatterSurface,
+    ClassIDStatic_CTEFootprintDecal,
+    ClassIDStatic_CTEFizz,
+    ClassIDStatic_CTEExplosion,
+    ClassIDStatic_CTEEnergySplash,
+    ClassIDStatic_CTEEffectDispatch,
+    ClassIDStatic_CTEDynamicLight,
+    ClassIDStatic_CTEDecal,
+    ClassIDStatic_CTEClientProjectile,
+    ClassIDStatic_CTEBubbleTrail,
+    ClassIDStatic_CTEBubbles,
+    ClassIDStatic_CTEBSPDecal,
+    ClassIDStatic_CTEBreakModel,
+    ClassIDStatic_CTEBloodStream,
+    ClassIDStatic_CTEBloodSprite,
+    ClassIDStatic_CTEBeamSpline,
+    ClassIDStatic_CTEBeamRingPoint,
+    ClassIDStatic_CTEBeamRing,
+    ClassIDStatic_CTEBeamPoints,
+    ClassIDStatic_CTEBeamLaser,
+    ClassIDStatic_CTEBeamFollow,
+    ClassIDStatic_CTEBeamEnts,
+    ClassIDStatic_CTEBeamEntPoint,
+    ClassIDStatic_CTEBaseBeam,
+    ClassIDStatic_CTEArmorRicochet,
+    ClassIDStatic_CTEMetalSparks,
+    ClassIDStatic_CSteamJet,
+    ClassIDStatic_CSmokeStack,
+    ClassIDStatic_DustTrail,
+    ClassIDStatic_CFireTrail,
+    ClassIDStatic_SporeTrail,
+    ClassIDStatic_SporeExplosion,
+    ClassIDStatic_RocketTrail,
+    ClassIDStatic_SmokeTrail,
+    ClassIDStatic_CPropVehicleDriveable,
+    ClassIDStatic_ParticleSmokeGrenade,
+    ClassIDStatic_CParticleFire,
+    ClassIDStatic_MovieExplosion,
+    ClassIDStatic_CTEGaussExplosion,
+    ClassIDStatic_CEnvQuadraticBeam,
+    ClassIDStatic_CEmbers,
+    ClassIDStatic_CEnvWind,
+    ClassIDStatic_CPrecipitation,
+    ClassIDStatic_CBaseTempEntity,
+    ClassIDStatic_CWeaponIFMSteadyCam,
+    ClassIDStatic_CWeaponIFMBaseCamera,
+    ClassIDStatic_CWeaponIFMBase,
+    ClassIDStatic_CTFWearableVM,
+    ClassIDStatic_CTFWearable,
+    ClassIDStatic_CTFWearableItem,
+    ClassIDStatic_CEconWearable,
+    ClassIDStatic_CBaseAttributableItem,
+    ClassIDStatic_CEconEntity,
+    ClassIDStatic_CHandleTest,
+    ClassIDStatic_CTeamplayRoundBasedRulesProxy,
+    ClassIDStatic_CTeamRoundTimer,
+    ClassIDStatic_CSpriteTrail,
+    ClassIDStatic_CSpriteOriented,
+    ClassIDStatic_CSprite,
+    ClassIDStatic_CRagdollPropAttached,
+    ClassIDStatic_CRagdollProp,
+    ClassIDStatic_CPoseController,
+    ClassIDStatic_CGameRulesProxy,
+    ClassIDStatic_CInfoLadderDismount,
+    ClassIDStatic_CFuncLadder,
+    ClassIDStatic_CEnvDetailController,
+    ClassIDStatic_CWorld,
+    ClassIDStatic_CWaterLODControl,
+    ClassIDStatic_CWaterBullet,
+    ClassIDStatic_CVoteController,
+    ClassIDStatic_CVGuiScreen,
+    ClassIDStatic_CPropJeep,
+    ClassIDStatic_CPropVehicleChoreoGeneric,
+    ClassIDStatic_CTest_ProxyToggle_Networkable,
+    ClassIDStatic_CTesla,
+    ClassIDStatic_CTeamTrainWatcher,
+    ClassIDStatic_CBaseTeamObjectiveResource,
+    ClassIDStatic_CTeam,
+    ClassIDStatic_CSun,
+    ClassIDStatic_CParticlePerformanceMonitor,
+    ClassIDStatic_CSpotlightEnd,
+    ClassIDStatic_CSlideshowDisplay,
+    ClassIDStatic_CShadowControl,
+    ClassIDStatic_CSceneEntity,
+    ClassIDStatic_CRopeKeyframe,
+    ClassIDStatic_CRagdollManager,
+    ClassIDStatic_CPhysicsPropMultiplayer,
+    ClassIDStatic_CPhysBoxMultiplayer,
+    ClassIDStatic_CBasePropDoor,
+    ClassIDStatic_CDynamicProp,
+    ClassIDStatic_CPointWorldText,
+    ClassIDStatic_CPointCommentaryNode,
+    ClassIDStatic_CPointCamera,
+    ClassIDStatic_CPlayerResource,
+    ClassIDStatic_CPlasma,
+    ClassIDStatic_CPhysMagnet,
+    ClassIDStatic_CPhysicsProp,
+    ClassIDStatic_CPhysBox,
+    ClassIDStatic_CParticleSystem,
+    ClassIDStatic_CMaterialModifyControl,
+    ClassIDStatic_CLightGlow,
+    ClassIDStatic_CInfoOverlayAccessor,
+    ClassIDStatic_CFuncTrackTrain,
+    ClassIDStatic_CFuncSmokeVolume,
+    ClassIDStatic_CFuncRotating,
+    ClassIDStatic_CFuncReflectiveGlass,
+    ClassIDStatic_CFuncOccluder,
+    ClassIDStatic_CFuncMonitor,
+    ClassIDStatic_CFunc_LOD,
+    ClassIDStatic_CTEDust,
+    ClassIDStatic_CFunc_Dust,
+    ClassIDStatic_CFuncConveyor,
+    ClassIDStatic_CBreakableSurface,
+    ClassIDStatic_CFuncAreaPortalWindow,
+    ClassIDStatic_CFish,
+    ClassIDStatic_CEntityFlame,
+    ClassIDStatic_CFireSmoke,
+    ClassIDStatic_CEnvTonemapController,
+    ClassIDStatic_CEnvScreenEffect,
+    ClassIDStatic_CEnvScreenOverlay,
+    ClassIDStatic_CEnvProjectedTexture,
+    ClassIDStatic_CEnvParticleScript,
+    ClassIDStatic_CFogController,
+    ClassIDStatic_CEntityParticleTrail,
+    ClassIDStatic_CEntityDissolve,
+    ClassIDStatic_CDynamicLight,
+    ClassIDStatic_CColorCorrectionVolume,
+    ClassIDStatic_CColorCorrection,
+    ClassIDStatic_CBreakableProp,
+    ClassIDStatic_CBasePlayer,
+    ClassIDStatic_CBaseFlex,
+    ClassIDStatic_CBaseEntity,
+    ClassIDStatic_CBaseDoor,
+    ClassIDStatic_CBaseCombatCharacter,
+    ClassIDStatic_CBaseAnimatingOverlay,
+    ClassIDStatic_CBoneFollower,
+    ClassIDStatic_CBaseAnimating,
+    ClassIDStatic_CInfoLightingRelative,
+    ClassIDStatic_CAI_BaseNPC,
+    ClassIDStatic_CBeam,
+    ClassIDStatic_CBaseViewModel,
+    ClassIDStatic_CBaseProjectile,
+    ClassIDStatic_CBaseParticleEntity,
+    ClassIDStatic_CBaseGrenade,
+    ClassIDStatic_CBaseCombatWeapon,
+    CLASSIDSTATIC_COUNT
+};
+///////////////////////////////////////////////////////////////////////////

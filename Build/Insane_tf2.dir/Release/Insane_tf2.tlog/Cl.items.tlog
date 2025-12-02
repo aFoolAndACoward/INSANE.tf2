@@ -1,0 +1,103 @@
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\imgui.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui_draw.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\imgui_draw.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui_impl_dx9.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\imgui_impl_dx9.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui_impl_win32.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\imgui_impl_win32.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui_tables.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\imgui_tables.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\External Libraries\ImGui\imgui_widgets.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\imgui_widgets.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Aimbot\Aimbot Melee\AimbotMelee.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\AimbotMelee.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Aimbot\Aimbot Projectile\AimbotProjectile.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\AimbotProjectile.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Aimbot\AimbotHelper.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\AimbotHelper.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Aimbot\AimbotHitscanV2\AimbotHitscanV2.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\AimbotHitscanV2.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\BulletTracers\BulletTarcers_t.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\BulletTarcers_t.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Config\ConfigHandler.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\ConfigHandler.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\CritHack\CritHack.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\CritHack.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\DMEHandler\DMEHandler.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\DMEHandler.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ESP\ESPV2.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\ESPV2.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Entity Iterator\EntityIterator.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\EntityIterator.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\FeatureHandler.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\FeatureHandler.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Glow\Glow.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\Glow.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Draw Objects\BaseDrawObj.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\BaseDrawObj.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Draw Objects\Box\Box.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\Box.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Draw Objects\Circle\Circle.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\Circle.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Draw Objects\Cube\Cube.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\Cube.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Draw Objects\Line\Line.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\Line.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine V2\Graphics.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\Graphics.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine\DirectX Handler\DirectXHandler.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\DirectXHandler.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine\Draw Objects\DrawObj.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\DrawObj.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Graphics Engine\Graphics Engine\GraphicsEngine.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\GraphicsEngine.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\AnimationHandler.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\AnimationHandler.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\InfoWindowV2\InfoWindow.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\InfoWindow.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\KeybindPanel\KeybindPanel.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\KeybindPanel.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\MenuV2\MenuV2.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\MenuV2.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\NotificationSystem\NotificationSystem.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\NotificationSystem.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ImGui\PlayerList\PlayerListV2.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\PlayerListV2.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Material Gen\MaterialGen.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\MaterialGen.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\ModelPreview\ModelPreview.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\ModelPreview.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Movement\Movement.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\Movement.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\MovementSimulation\MovementSimulation.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\MovementSimulation.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\NoSpread\NoSpreadV2.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\NoSpreadV2.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Projectile Engine\ProjectileEngine.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\ProjectileEngine.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\Tick Shifting\TickShifting.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\TickShifting.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\TickManip\AntiAim\AntiAimV2.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\AntiAimV2.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\TickManip\TickManipHelper.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\TickManipHelper.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Features\WorldColorModulation\WorldColorModulation.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\WorldColorModulation.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CBaseAnimating_SetupBones.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\CBaseAnimating_SetupBones.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CClientState_Disconnect.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\CClientState_Disconnect.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CGlowObjectManager_ApplyEntityGlowEffects.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\CGlowObjectManager_ApplyEntityGlowEffects.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CL_Move.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\CL_Move.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CNetChan_SendDatagram.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\CNetChan_SendDatagram.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CTFWeaponBaseMelee_CalcIsAttackCritHelper.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\CTFWeaponBaseMelee_CalcIsAttackCritHelper.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CTFWeaponBase_CalcIsAttackCriticalHelper.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\CTFWeaponBase_CalcIsAttackCriticalHelper.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CViewRender_RenderView.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\CViewRender_RenderView.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CheckForPureServerWhitelist\sv_pure.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\sv_pure.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\ClientModeShared_LevelInit.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\ClientModeShared_LevelInit.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\CreateMove.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\CreateMove.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\DirectX Hook\DirectX_hook.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\DirectX_hook.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\DispatchUserMessage\DispatchUserMessage.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\DispatchUserMessage.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\DrawModelExecutes.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\DrawModelExecutes.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\EndScene\EndScene helper functions.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\EndScene helper functions.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\EndScene\EndScene.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\EndScene.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\FX_FireBullets.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\FX_FireBullets.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\FrameStageNotify\FrameStageNotify.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\FrameStageNotify.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\GetBulletTracers.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\GetBulletTracers.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\GetFogColor.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\GetFogColor.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\GetSkyboxFogColor.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\GetSkyboxFogColor.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\GetUserCmd.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\GetUserCmd.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\IClientRenderable_ShouldDraw.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\IClientRenderable_ShouldDraw.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\IStudioRender_DrawModelStaticProp.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\IStudioRender_DrawModelStaticProp.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\PaintTraverse.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\PaintTraverse.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\R_LoadSky.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\R_LoadSky.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\WinProc\WinProc.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\WinProc.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Hooks\renderGlowEffect.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\renderGlowEffect.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Libraries\Console System V2\ConsoleSystem.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\ConsoleSystem.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Libraries\Utility\Utility.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\Utility.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\FontManager.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\FontManager.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\JetBrains Mono NL\JetBrains Mono NL Light.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\JetBrains Mono NL Light.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\JetBrains Mono NL\JetBrains Mono NL SemiBold.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\JetBrains Mono NL SemiBold.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\JetBrains Mono Nerd\JetBrainsMonoNerd.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\JetBrainsMonoNerd.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\Montserrat\MontserratBlack.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\MontserratBlack.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Resources\Fonts\ShadowIntoLight\ShadowIntoLight.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\ShadowIntoLight.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\Aimbot\aimbot_t.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\aimbot_t.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\FN index Manager\FN index Manager.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\FN index Manager.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\NetVars\NetVarHandler.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\NetVarHandler.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\TF object manager\TFOjectManager.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\TFOjectManager.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\BaseEntity.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\BaseEntity.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\Basic Structures.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\Basic Structures.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\CommonFns.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\CommonFns.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\IGameEventManager.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\IGameEventManager.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\INetworkStringTable.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\INetworkStringTable.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\IPanel.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\IPanel.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\IVDebugOverlay.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\IVDebugOverlay.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\Source Entity.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\Source Entity.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\baseWeapon.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\baseWeapon.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\SDK\class\bf_buf.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\bf_buf.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Threads\thread1.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\thread1.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\CVar Handler\CVarHandler.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\CVarHandler.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\ClassIDHandler\ClassIDHandler.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\ClassIDHandler.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Export Fn Handler\ExportFnHelper.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\ExportFnHelper.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Hook Handler\Hook_t.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\Hook_t.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Interface Handler\Interface.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\Interface.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Profiler\Profiler.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\Profiler.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Profiler\ProfilerHelper.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\ProfilerHelper.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\Utility\Signature Handler\signatures.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\signatures.obj
+D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\src\main.cpp;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.dir\Release\main.obj

@@ -1,0 +1,77 @@
+//=========================================================================
+//                      PROJECTILE ENGINE
+//=========================================================================
+// by      : INSANE
+// created : 28/06/2025
+// 
+// purpose : Simulates projectiles using high school physics & Source engine's physics objects
+//-------------------------------------------------------------------------
+#pragma once
+
+#include "../../SDK/class/Basic Structures.h"
+#include "../FeatureHandler.h"
+
+// Forward declares
+class IPhysicsEnvironment;
+class IPhysicsObject;
+
+class baseWeapon;
+class BaseEntity;
+struct WeaponData_t;
+
+struct ProjectileInfo_t
+{
+    ProjectileInfo_t() { Reset(); }
+    void Initialize(baseWeapon* pWeapon, const bool bDucking, const bool bViewModelFlipped);
+    void SetProjectileAngle(const vec& vOwnerEyePos, const qangle & qOwnerAngles);
+
+    void Reset();
+    void ClearPosData();
+
+    // This data is doesn't get updated until weapon is changed
+    float    m_flSpeed;
+    float    m_flUpwardVelOffset;
+    float    m_flGravityMult;
+    vec      m_vAngImpulse;
+    
+    vec      m_vInertia;
+    vec      m_vDragBasis;
+    vec      m_vAngDragBases;
+    
+    vec      m_vShootPosOffset;
+    uint32_t m_iWeaponDefID;
+    WeaponData_t* m_pTFWpnFileInfo;
+
+    bool     m_bUsesDrag;
+
+    // This data gets cleared every call to Initialize()
+    vec      m_vStart;
+    vec      m_vEnd;
+    vec      m_vOrigin; // current origin
+    qangle   m_qAngles;
+
+};
+
+class ProjectileEngine_t
+{
+public:
+    ProjectileEngine_t();
+
+    bool Initialize(BaseEntity* pWeaponOwner, baseWeapon* pWeapon, const qangle& qOwnerAngles);
+    void RunTick(bool bTrace, BaseEntity* pIgnoreEnt);
+    void Reset();
+
+    ProjectileInfo_t& SetupProjectile(baseWeapon* pWeapon, BaseEntity* pWeaponOwner, const qangle& qOwnerAngles);
+    ProjectileInfo_t m_projInfo;
+    inline vec GetPos() const { return m_projInfo.m_vOrigin; } 
+
+private:
+    void _AccountForCharge(baseWeapon* pWeapon, BaseEntity* pWeaponOwner);
+
+    bool _SetupPhysicsObject();
+    void _DeletePhysicsObjects();
+
+    IPhysicsEnvironment* m_pEnv;
+    IPhysicsObject*      m_pObj;
+};
+DECLARE_FEATURE_OBJECT(projectileEngine, ProjectileEngine_t)

@@ -1,0 +1,49 @@
+#include <Windows.h>
+#include <string>
+
+#include "../../Utility/Hook Handler/Hook_t.h"
+#include "../../Utility/ConsoleLogging.h"
+
+#include "../../Features/NoSpread/NoSpreadV2.h"
+#include "../../SDK/class/bf_buf.h"
+
+
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+inline const char* GetMsgName(void* pCUserMsg, int iMsgType)
+{
+    if (pCUserMsg == nullptr)
+        return nullptr;
+
+    int64_t dictMsg = *((int64_t*)pCUserMsg + 1);
+    int64_t offset = 32LL * (unsigned int)iMsgType;
+    return *(const char**)(dictMsg + offset + 16);
+}
+
+
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+MAKE_HOOK(DispatchUserMsg, "40 56 48 83 EC ? 49 8B F0", __fastcall, CLIENT_DLL, bool, void* pVTable, int iDataType, bf_read* msg)
+{
+    if (iDataType == 5)
+    {
+        char rawMsg[256]; msg->ReadString(rawMsg, sizeof(rawMsg), false);
+        msg->Seek(0);
+        std::string szMsg = rawMsg;
+
+        bool bNoPrint = false;
+        if (F::noSpreadV2.IsSynced() == true)
+        {
+            bNoPrint = F::noSpreadV2.VerifyServerClientDelta(szMsg);
+        }
+        else
+        {
+            bNoPrint = F::noSpreadV2.ExtractTimeStamps(szMsg);
+        }
+
+        return true;
+    }
+    //printf("data type recieved : %d -> [ %s ]\n", iDataType, GetMsgName(pVTable, iDataType));
+
+    return Hook::DispatchUserMsg::O_DispatchUserMsg(pVTable, iDataType, msg);
+}

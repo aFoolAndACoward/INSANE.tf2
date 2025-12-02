@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F6A3E105-E313-3F86-A53A-650EDC17795C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SD:/Github Repos/INSANE.tf2 public release/INSANE.tf2" "-BD:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build" --check-stamp-file "D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeCXXCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeRCCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SD:/Github Repos/INSANE.tf2 public release/INSANE.tf2" "-BD:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build" --check-stamp-file "D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeCXXCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeRCCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SD:/Github Repos/INSANE.tf2 public release/INSANE.tf2" "-BD:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build" --check-stamp-file "D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeCXXCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeRCCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\mingw64\bin\cmake.exe "-SD:/Github Repos/INSANE.tf2 public release/INSANE.tf2" "-BD:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build" --check-stamp-file "D:/Github Repos/INSANE.tf2 public release/INSANE.tf2/Build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\mingw64\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\mingw64\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\mingw64\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\mingw64\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\mingw64\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeCXXCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeRCCompiler.cmake;D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\3.31.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\ZERO_CHECK.vcxproj">
+      <Project>{BC4AEC51-CB6E-3207-B197-EDE13977B907}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Github Repos\INSANE.tf2 public release\INSANE.tf2\Build\Insane_tf2.vcxproj">
+      <Project>{121F9A47-B556-306F-B267-B038A1102CA9}</Project>
+      <Name>Insane_tf2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -110,20 +110,20 @@ private:
     bool   _Initialize();
     void   _InitFonts();
 
-    ImVec2 _DrawMainBody(float flWidth, float flHeight);
-    void   _DrawTabBar(float flWidth, float flHeight, float x, float y);
-    void   _DrawSections(Tab_t* pTab, float flWidth, float flHeight, float x, float y, ImVec2 vWindowPos);
-    void   _DrawConfigPanel(float x, float y, float flWidth, float flHeight);
-    void   _DrawConfigInfo(ImVec2 vConfigInfoPos, ImVec2 vConfigInfoSize, const float flConfigInfoRounding);
-    void   _DrawConfigList(ImVec2 vConfigListSize);
+    ImVec2 _DrawMainBody     (float flWidth, float flHeight);
+    void   _DrawTabBar       (float flWidth, float flHeight, float x, float y);
+    void   _DrawSections     (Tab_t* pTab, float flWidth, float flHeight, float x, float y, ImVec2 vWindowPos);
+    void   _DrawConfigPanel  (float x, float y, float flWidth, float flHeight);
+    void   _DrawConfigInfo   (ImVec2 vConfigInfoPos, ImVec2 vConfigInfoSize, const float flConfigInfoRounding);
+    void   _DrawConfigList   (ImVec2 vConfigListSize);
     void   _DrawConfigButtons(ImVec2 vConfigButtonPos, ImVec2 vConfigButtonSize);
     bool   m_bConfigPanelActive = false;
     ImVec2 m_vMenuPos;
     ImVec2 m_vMenuSize;
     // These are some important variables, they hold active config state n shit.
-    int    m_iActiveConfigIndex = -1; 
-    int    m_iLoadedConfigIndex = -1;
-    int    m_iNewFileIndex      = -1;
+    int         m_iActiveConfigIndex           = -1;
+    int         m_iLoadedConfigIndex           = -1;
+    int         m_iNewFileIndex                = -1;
     void _GetFileInfo(const std::string& szFilePath);
     std::string m_szLoadedConfigName           = "";
     std::string m_szLoadedConfigPath           = "";
@@ -134,11 +134,11 @@ private:
     ImVec2 _CalculateSectionSize(int nFeatures, float flInterFeaturePadding, float flSectionPadding, float flFeatureWidth, float flFeatureHeight) const;
 
     // Feature specfic...
-    void _DrawBoolean     (IFeature* pFeature, ImVec2 vMinWithPadding, ImVec2 vMaxWithPadding, ImVec2 vWindowPos);
-    void _DrawIntSlider   (IFeature* pFeature, ImVec2 vMinWithPadding, ImVec2 vMaxWithPadding, ImVec2 vWindowPos);
-    void _DrawFloatSlider (IFeature* pFeature, ImVec2 vMinWithPadding, ImVec2 vMaxWithPadding, ImVec2 vWindowPos);
-    void _DrawDropDown    (IFeature* pFeature, ImVec2 vMinWithPadding, ImVec2 vMaxWithPadding, ImVec2 vWindowPos);
-    void _DrawColor       (IFeature* pFeature, ImVec2 vMinWithPadding, ImVec2 vMaxWithPadding, ImVec2 vWindowPos);
+    void _DrawBoolean         (IFeature* pFeature, ImVec2 vMinWithPadding, ImVec2 vMaxWithPadding, ImVec2 vWindowPos);
+    void _DrawIntSlider       (IFeature* pFeature, ImVec2 vMinWithPadding, ImVec2 vMaxWithPadding, ImVec2 vWindowPos);
+    void _DrawFloatSlider     (IFeature* pFeature, ImVec2 vMinWithPadding, ImVec2 vMaxWithPadding, ImVec2 vWindowPos);
+    void _DrawDropDown        (IFeature* pFeature, ImVec2 vMinWithPadding, ImVec2 vMaxWithPadding, ImVec2 vWindowPos);
+    void _DrawColor           (IFeature* pFeature, ImVec2 vMinWithPadding, ImVec2 vMaxWithPadding, ImVec2 vWindowPos);
 
     void _TriggerPopup        (IFeature* pFeature) const;
 
@@ -187,54 +187,54 @@ DEFINE_TAB(Menu, 10)
 
 ////////////////////////////// MAIN BODY ////////////////////////////////////
 DEFINE_SECTION(Menu, "Menu", 1)
-DEFINE_FEATURE(Scale,            "Scale", FloatSlider_t, Menu, Menu, 1, FloatSlider_t(1.0f, 0.25f, 2.0f))
-DEFINE_FEATURE(Blur,             "Blur", FloatSlider_t, Menu, Menu, 2, FloatSlider_t(0.0f, 0.0f, 8.0f))
+DEFINE_FEATURE(Scale,            "Scale",            FloatSlider_t, Menu, Menu, 1, FloatSlider_t(1.0f, 0.25f, 2.0f))
+DEFINE_FEATURE(Blur,             "Blur",             FloatSlider_t, Menu, Menu, 2, FloatSlider_t(0.0f, 0.0f, 8.0f))
 
-DEFINE_FEATURE(ColorTopRight,    "Top-Right Color", ColorData_t,   Menu, Menu, 3, ColorData_t(RGBA_t((unsigned char)255, 255, 255, 255)))
-DEFINE_FEATURE(ColorTopLeft,     "Top-Left Color", ColorData_t,   Menu, Menu, 4, ColorData_t(RGBA_t((unsigned char)255, 255, 255, 255)))
-DEFINE_FEATURE(ColorBottomRight, "Bottom-Right Color", ColorData_t,   Menu, Menu, 5, ColorData_t(RGBA_t((unsigned char)255, 255, 255, 255)))
-DEFINE_FEATURE(ColorBottomLeft,  "Bottom-Left Color", ColorData_t,   Menu, Menu, 6, ColorData_t(RGBA_t((unsigned char)255, 255, 255, 255)))
+DEFINE_FEATURE(ColorTopRight,    "Top-Right Color",    ColorData_t, Menu, Menu, 3, ColorData_t(RGBA_t((unsigned char)10, 10, 10, 255)))
+DEFINE_FEATURE(ColorTopLeft,     "Top-Left Color",     ColorData_t, Menu, Menu, 4, ColorData_t(RGBA_t((unsigned char)10, 10, 10, 255)))
+DEFINE_FEATURE(ColorBottomRight, "Bottom-Right Color", ColorData_t, Menu, Menu, 5, ColorData_t(RGBA_t((unsigned char)10, 10, 10, 255)))
+DEFINE_FEATURE(ColorBottomLeft,  "Bottom-Left Color",  ColorData_t, Menu, Menu, 6, ColorData_t(RGBA_t((unsigned char)10, 10, 10, 255)))
 
-DEFINE_FEATURE(rgb,              "RGB", bool,          Menu, Menu, 7, false)
-DEFINE_FEATURE(RGBSpeed,         "RGB Speed", FloatSlider_t, Menu, Menu, 8, FloatSlider_t(0.0f, 0.0f, 10.0f))
+DEFINE_FEATURE(rgb,              "RGB",                       bool, Menu, Menu, 7, false)
+DEFINE_FEATURE(RGBSpeed,         "RGB Speed",        FloatSlider_t, Menu, Menu, 8, FloatSlider_t(0.0f, 0.0f, 10.0f))
 
-DEFINE_FEATURE(Rounding,         "Rounding", FloatSlider_t, Menu, Menu, 9, FloatSlider_t(15.0f, 0.0f, 100.0f)) 
-DEFINE_FEATURE(Draw_Guides,      "Draw Guides", bool,          Menu, Menu, 10, true)
+DEFINE_FEATURE(Rounding,         "Rounding",         FloatSlider_t, Menu, Menu, 9, FloatSlider_t(15.0f, 0.0f, 100.0f))
+DEFINE_FEATURE(Draw_Guides,      "Draw Guides",               bool, Menu, Menu, 10, false)
 
 
 ////////////////////////////// SIDE MENU ////////////////////////////////////
 DEFINE_SECTION(SideMenu, "Menu", 2)
-DEFINE_FEATURE(Scale,            "Scale", FloatSlider_t, SideMenu, Menu, 1, FloatSlider_t(1.0f, 0.25f, 2.0f))
-DEFINE_FEATURE(Blur,             "Blur", FloatSlider_t, SideMenu, Menu, 2, FloatSlider_t(0.0f, 0.0f, 8.0f))
+DEFINE_FEATURE(Scale,            "Scale",                 FloatSlider_t, SideMenu, Menu, 1, FloatSlider_t(1.0f, 0.25f, 2.0f))
+DEFINE_FEATURE(Blur,             "Blur",                  FloatSlider_t, SideMenu, Menu, 2, FloatSlider_t(0.0f, 0.0f, 8.0f))
 
-DEFINE_FEATURE(ColorTopRight,    "Top-Right Color", ColorData_t,   SideMenu, Menu, 3, ColorData_t(RGBA_t((unsigned char)255, 255, 255, 255)))
-DEFINE_FEATURE(ColorTopLeft,     "Top-Left Color", ColorData_t,   SideMenu, Menu, 4, ColorData_t(RGBA_t((unsigned char)255, 255, 255, 255)))
-DEFINE_FEATURE(ColorBottomRight, "Bottom-Right Color", ColorData_t,   SideMenu, Menu, 5, ColorData_t(RGBA_t((unsigned char)255, 255, 255, 255)))
-DEFINE_FEATURE(ColorBottomLeft,  "Bottom-Left Color", ColorData_t,   SideMenu, Menu, 6, ColorData_t(RGBA_t((unsigned char)255, 255, 255, 255)))
+DEFINE_FEATURE(ColorTopRight,    "Top-Right Color",         ColorData_t, SideMenu, Menu, 3, ColorData_t(RGBA_t((unsigned char)26, 26, 26, 255)))
+DEFINE_FEATURE(ColorTopLeft,     "Top-Left Color",          ColorData_t, SideMenu, Menu, 4, ColorData_t(RGBA_t((unsigned char)26, 26, 26, 255)))
+DEFINE_FEATURE(ColorBottomRight, "Bottom-Right Color",      ColorData_t, SideMenu, Menu, 5, ColorData_t(RGBA_t((unsigned char)26, 26, 26, 255)))
+DEFINE_FEATURE(ColorBottomLeft,  "Bottom-Left Color",       ColorData_t, SideMenu, Menu, 6, ColorData_t(RGBA_t((unsigned char)26, 26, 26, 255)))
 
-DEFINE_FEATURE(rgb,              "RGB", bool,          SideMenu, Menu, 7, false)
-DEFINE_FEATURE(RGBSpeed,         "RGB Speed", FloatSlider_t, SideMenu, Menu, 8, FloatSlider_t(0.0f, 0.0f, 10.0f))
+DEFINE_FEATURE(rgb,              "RGB",                            bool, SideMenu, Menu, 7, false)
+DEFINE_FEATURE(RGBSpeed,         "RGB Speed",             FloatSlider_t, SideMenu, Menu, 8, FloatSlider_t(0.0f, 0.0f, 10.0f))
 
-DEFINE_FEATURE(Rounding,         "Rounding", FloatSlider_t, SideMenu, Menu, 9, FloatSlider_t(15.0f, 0.0f, 100.0f))
+DEFINE_FEATURE(Rounding,         "Rounding",              FloatSlider_t, SideMenu, Menu, 9, FloatSlider_t(15.0f, 0.0f, 100.0f))
 DEFINE_FEATURE(AnimAccentSize,   "Animation Accent Size", FloatSlider_t, SideMenu, Menu, 10, FloatSlider_t(30.0f, 0.0f, 200.0f))
 
 
 ////////////////////////////// THEME ////////////////////////////////////
 DEFINE_SECTION(Theme, "Menu", 3)
-DEFINE_FEATURE(Theme, "Theme Color", ColorData_t, Theme, Menu, 1, ColorData_t(RGBA_t((unsigned char)255, 0, 0, 255)))
+DEFINE_FEATURE(Theme, "Theme Color", ColorData_t, Theme, Menu, 1, ColorData_t(RGBA_t((unsigned char)255, 132, 0, 255)))
 
 
 ////////////////////////////// SECTION BOXES ////////////////////////////////////
 DEFINE_SECTION(SectionBoxes, "Menu", 4)
-DEFINE_FEATURE(Blur,             "Blur", FloatSlider_t, SectionBoxes, Menu, 1, FloatSlider_t(0.0f, 0.0f, 8.0f))
+DEFINE_FEATURE(Blur,             "Blur",             FloatSlider_t, SectionBoxes, Menu, 1, FloatSlider_t(0.0f, 0.0f, 8.0f))
 
-DEFINE_FEATURE(ColorTopRight,    "Top-Right Color", ColorData_t,   SectionBoxes, Menu, 2, ColorData_t(RGBA_t((unsigned char)255, 255, 255, 255)))
-DEFINE_FEATURE(ColorTopLeft,     "Top-Left Color", ColorData_t,   SectionBoxes, Menu, 3, ColorData_t(RGBA_t((unsigned char)255, 255, 255, 255)))
-DEFINE_FEATURE(ColorBottomRight, "Bottom-Right Color", ColorData_t,   SectionBoxes, Menu, 4, ColorData_t(RGBA_t((unsigned char)255, 255, 255, 255)))
-DEFINE_FEATURE(ColorBottomLeft,  "Bottom-Left Color", ColorData_t,   SectionBoxes, Menu, 5, ColorData_t(RGBA_t((unsigned char)255, 255, 255, 255)))
+DEFINE_FEATURE(ColorTopRight,    "Top-Right Color",    ColorData_t, SectionBoxes, Menu, 2, ColorData_t(RGBA_t((unsigned char)26, 26, 26, 255)))
+DEFINE_FEATURE(ColorTopLeft,     "Top-Left Color",     ColorData_t, SectionBoxes, Menu, 3, ColorData_t(RGBA_t((unsigned char)26, 26, 26, 255)))
+DEFINE_FEATURE(ColorBottomRight, "Bottom-Right Color", ColorData_t, SectionBoxes, Menu, 4, ColorData_t(RGBA_t((unsigned char)26, 26, 26, 255)))
+DEFINE_FEATURE(ColorBottomLeft,  "Bottom-Left Color",  ColorData_t, SectionBoxes, Menu, 5, ColorData_t(RGBA_t((unsigned char)26, 26, 26, 255)))
 
-DEFINE_FEATURE(rgb,              "RGB", bool,          SectionBoxes, Menu, 6, false)
-DEFINE_FEATURE(RGBSpeed,         "RGB Speed", FloatSlider_t, SectionBoxes, Menu, 7, FloatSlider_t(0.0f, 0.0f, 10.0f))
+DEFINE_FEATURE(rgb,              "RGB",                       bool, SectionBoxes, Menu, 6, false)
+DEFINE_FEATURE(RGBSpeed,         "RGB Speed",        FloatSlider_t, SectionBoxes, Menu, 7, FloatSlider_t(0.0f, 0.0f, 10.0f))
 
-DEFINE_FEATURE(Rounding,         "Rounding", FloatSlider_t, SectionBoxes, Menu, 8, FloatSlider_t(15.0f, 0.0f, 100.0f), FeatureFlag_SupportKeyBind)
-DEFINE_FEATURE(ThemeBorder,      "Theme Borders", bool,          SectionBoxes, Menu, 9, false)
+DEFINE_FEATURE(Rounding,         "Rounding",         FloatSlider_t, SectionBoxes, Menu, 8, FloatSlider_t(15.0f, 0.0f, 100.0f), FeatureFlag_SupportKeyBind)
+DEFINE_FEATURE(ThemeBorder,      "Theme Borders",             bool, SectionBoxes, Menu, 9, false)

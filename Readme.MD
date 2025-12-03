@@ -1,4 +1,5 @@
-![logo](images/logo.png) 
+<img src="images/logo.png" width="180" height="180">
+
 # INSANE.tf2
 ## ⚠️ For education purposes only. Do not use in live matches.
 

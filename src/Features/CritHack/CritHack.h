@@ -19,6 +19,10 @@ struct WeaponData_t;
 //        EDIT : ( YES IT DOES, the headshot damage gets added to the total crit damage. )
 // TODO : Handle other edge cases & remove bullshit weapons like Wrangler and shit like that.
 
+
+
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
 class WeaponCritData_t
 {
 public:
@@ -48,6 +52,9 @@ public:
     uint32_t    m_nCritRequests = 0;
 };
 
+
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
 class CritHack_t
 {
 public:
@@ -69,18 +76,19 @@ public:
     void Reset();
 
 private:
-    int   m_iWishSeed                    = 0;
-    bool  m_bLastShotDeemedCrit          = false; // <-- This helps crithack to not break in case of accidental crits.
-    bool  m_bIsCritBoosted               = false;
-    float m_flLastFireTime               = 0.0f;
-    float m_flLastRapidFireCritCheckTime = 0.0f;
-    int   m_nOldCritCount                = DEFAULT_OLD_CRIT_COUNT;
-    float m_flCritChance                 = 0.0f;
-    static constexpr int DEFAULT_OLD_CRIT_COUNT = -1;
-    uint32_t             m_iLastWeaponID        = 0;
-    WeaponCritData_t*    m_pLastShotWeapon      = nullptr;
-    WeaponCritData_t*    m_pLastWeapon          = nullptr;
-    int                  m_iActiveWeaponSlot    = slot_t::WPN_SLOT_INVALID;
+    int                  m_iWishSeed                    = 0;
+    bool                 m_bLastShotDeemedCrit          = false; // <-- This helps crithack to not break in case of accidental crits.
+    bool                 m_bIsCritBoosted               = false;
+    float                m_flLastFireTime               = 0.0f;
+    float                m_flLastRapidFireCritCheckTime = 0.0f;
+    int                  m_nOldCritCount                = DEFAULT_OLD_CRIT_COUNT;
+    float                m_flCritChance                 = 0.0f;
+    static constexpr int DEFAULT_OLD_CRIT_COUNT         = -1;
+    uint32_t             m_iLastWeaponID                = 0;
+    WeaponCritData_t*    m_pLastShotWeapon              = nullptr;
+    WeaponCritData_t*    m_pLastWeapon                  = nullptr;
+    int                  m_iActiveWeaponSlot            = slot_t::WPN_SLOT_INVALID;
+    
 
     // Determines (current) Crit restriction...
     enum CritBanStatus_t
@@ -103,25 +111,24 @@ private:
     CritHackStatus_t _GetCritHackStatus(BaseEntity* pLocalPlayer, WeaponCritData_t* pWeaponCritData);
     
     // Crit seed search & confirmation...
-    int  _GetCritSeed(CUserCmd* pCmd, WeaponCritData_t* pWeaponCritData, BaseEntity* pLocalPlayer);
-    bool _IsSeedCrit(int iSeed, float flCritChance, WeaponCritData_t* pWeaponCritData, bool bSafeCheck = false) const;
-    bool _IsSeedNOTcrit(int iSeed, float flCritChance, WeaponCritData_t* pWeaponCritData, bool bSafeCheck = false) const;
-    bool _CanThisTickPotentiallyCrit(CUserCmd* pCmd, float flCritChance, WeaponCritData_t* pWeaponCritData);
-    void _AdjustWeaponsBucket(WeaponCritData_t* pWeaponData, BaseEntity* pLocalPlayer);
+    int   _GetCritSeed                (CUserCmd* pCmd, WeaponCritData_t* pWeaponCritData, BaseEntity* pLocalPlayer);
+    bool  _IsSeedCrit                 (int iSeed, float flCritChance, WeaponCritData_t* pWeaponCritData, bool bSafeCheck = false) const;
+    bool  _IsSeedNOTcrit              (int iSeed, float flCritChance, WeaponCritData_t* pWeaponCritData, bool bSafeCheck = false) const;
+    bool  _CanThisTickPotentiallyCrit (CUserCmd* pCmd, float flCritChance, WeaponCritData_t* pWeaponCritData);
+    void  _AdjustWeaponsBucket        (WeaponCritData_t* pWeaponData, BaseEntity* pLocalPlayer);
 
-    void _Draw(CritBanStatus_t iBanStatus, CritHackStatus_t iCritHackStatus, 
-        WeaponCritData_t* pWeaponCritData, int iPendingDamage);
+    void  _Draw                       (CritBanStatus_t iBanStatus, CritHackStatus_t iCritHackStatus, WeaponCritData_t* pWeaponCritData, int iPendingDamage);
 
-    bool _IsWeaponEligibleForCritHack(BaseEntity* pLocalPlayer, WeaponCritData_t* pActiveWeapon);
-    float _GetCritChance(BaseEntity* pLocalPlayer, WeaponCritData_t* pWeaponCritData);
-    
+    bool  _IsWeaponEligibleForCritHack(BaseEntity* pLocalPlayer, WeaponCritData_t* pActiveWeapon);
+    float _GetCritChance              (BaseEntity* pLocalPlayer, WeaponCritData_t* pWeaponCritData);
+
     // Forcing & Avoiding Crit...
-    void _ForceCritV2(int iWishSeed, CUserCmd* pCmd, CritBanStatus_t iCritBanStatus, WeaponCritData_t* pWeaponCritData, bool bTickConsideredForRapidFireCheck);
-    void _AvoidCritV2(CUserCmd* pCmd, WeaponCritData_t* pWeaponCritData, float flCritChance)const;
+    void  _ForceCritV2                (int iWishSeed, CUserCmd* pCmd, CritBanStatus_t iCritBanStatus, WeaponCritData_t* pWeaponCritData, bool bTickConsideredForRapidFireCheck);
+    void  _AvoidCritV2                (CUserCmd* pCmd, WeaponCritData_t* pWeaponCritData, float flCritChance)const;
 
     // Crit restrictions realated...
-    bool _AreWeCritBanned(BaseEntity* pLocalPlayer, WeaponCritData_t* pActiveWeapon, int* iPendingDamage = nullptr);
-    bool _CanWithdrawlCritV3(BaseEntity* pLocalPlayer, WeaponCritData_t* pActiveWeapon, int* iPendingDamage = nullptr);
+    bool  _AreWeCritBanned            (BaseEntity* pLocalPlayer, WeaponCritData_t* pActiveWeapon, int* iPendingDamage = nullptr);
+    bool  _CanWithdrawlCritV3         (BaseEntity* pLocalPlayer, WeaponCritData_t* pActiveWeapon, int* iPendingDamage = nullptr);
 
     // Records any changes in Enemy health
     void _StoreHealthChanges();
@@ -130,10 +137,10 @@ private:
     std::unordered_map<BaseEntity*, HealthRecord_t> m_mapHealthRecords = {};
 
     // Crit bucket parameters
-    uint32_t m_iLocalPlayerEntIndex = 0;
-    uint32_t m_iTotalDamage         = 0;
-    uint32_t m_iRangedCritDamage    = 0;
-    
+    uint32_t         m_iLocalPlayerEntIndex = 0;
+    uint32_t         m_iTotalDamage         = 0;
+    uint32_t         m_iRangedCritDamage    = 0;
+
     // Weapon's crit buckets.
     WeaponCritData_t m_PrimaryCritData;
     WeaponCritData_t m_SecondaryCritData;

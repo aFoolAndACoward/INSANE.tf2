@@ -4,6 +4,7 @@
 
 ### ⚙️ **Requirments to build** 
 - MSVC compiler
+- CMake
 
 ---
 ### ✅ **How to build**

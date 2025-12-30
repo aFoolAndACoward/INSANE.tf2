@@ -1,6 +1,6 @@
 <p align="center"> <img src="images/logo.png" width="180" height="180"> </p>
 
-# INSANE.tf2 [![Discord](https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&logoColor=white)](https://discord.gg/ny5gb2FW)
+# INSANE.tf2 [![Discord](https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&logoColor=white)](https://discord.gg/XtUdVqzh)
 
 ### ⚙️ **Requirments to build** 
 - MSVC compiler
